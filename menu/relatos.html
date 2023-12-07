@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../logocausa.png">
+    <title>Relatos</title>
+</head>
+<style>
+    body {
+        margin: 0;
+        background-image: linear-gradient(to right, #a6abbb, rgb(32, 114, 176));
+        ;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .menu {
+        background-color: #4169e1;
+        padding: 12px;
+    }
+
+    .menu ul {
+        display: flex;
+    }
+
+    .menu ul li {
+        list-style-type: none;
+        padding-right: 18px;
+    }
+
+    .relatos {
+        display: flex;
+        align-items: center;
+        margin-bottom: 20px;
+    }
+
+    .relatos img {
+        max-width: 38px;
+        margin-right: 25px;
+        margin-left: 20px;
+        border-radius: 90%;
+
+    }
+
+    form {
+        margin-left: 10px;
+        color: white;
+    }
+
+    input {
+        background: none;
+        border: none;
+        border-bottom: 1px solid white;
+        outline: none;
+        color: white;
+        font-size: 13px;
+        width: 30%;
+        letter-spacing: 1.5px;
+    }
+
+    .btn{
+        background-color: rgba(0, 0, 0, 0.4);
+        width: 25%;
+        padding: 10px;
+        border-radius: 4px;
+    }
+
+    .btn:hover{
+        background-color: white;
+        transition: 0.6s;
+        opacity: 0.7; 
+    }
+
+    a:link{
+        color: white;
+    }
+
+    a:hover{
+        font-weight: bold;
+    }
+
+    a:visited{
+        color: white;
+    }
+
+    @media (max-width: 970px) {
+        .menu ul {
+            flex-direction: column;
+            align-items: center;
+        }
+
+    }
+
+    h3{
+        margin-left: 10px;
+    }
+</style>
+
+<body>
+
+    <div class="container">
+        <div class="menu">
+            <ul>
+                <li><a href="../index.html">O PROJETO</a></li>
+                <li><a href="historia.html">NOSSA HISTÓRIA</a></li>
+                <li><a href="cadastro.html">SE CADASTRE</a></li>
+                <li><a href="voluntario.html">VOLUNTÁRIO</a></li>
+                <li><a href="relatos.html">RELATOS</a></li>
+                <li><a href="empresas.html">EMPRESAS PARCEIRAS</a></li>
+            </ul>
+        </div>
+
+        <center>
+            <h2>Segue o relato de famílias que participaram do nosso Projeto!</h2>
+        </center>
+
+        <br><br>
+
+        <div class="relatos">
+            <img src="user.jfif">
+            <p>"O projeto ajudou muito a minha família quando mais precisavamos, hoje posso retribuir toda essa ajuda, muito obrigado Causa Blue."</p>
+        </div>
+        <div class="relatos">
+            <img src="user.jfif">
+            <p>"Na quarentena eu me vi sem saída, acabei perdendo meu emprego, mas graças a causa tive apoio e consegui superar esse momento."</p>
+        </div>
+        <div class="relatos">
+            <img src="user.jfif">
+            <p>"O projeto é maravilhoso, ajudou a mim e a minha família, assim como ajuda diversas outras em todo o Brasil!"</p>
+        </div>
+
+        <br>
+
+        <h3>Deixe o seu relato.</h3>
+
+        
+        <form name="form3">
+            <label for="nome">Nome</label>
+            <br>
+            <input type="text" name="nome" id="nome" placeholder="Digite seu nome">
+
+            <br><br>
+            
+            <textarea rows="4" cols="50" name="comentarioRelato" placeholder="Digite o seu relato..."></textarea>
+            <br>
+            <input type="submit" class="btn" value="ENVIAR" onclick="return enviar()">
+        </form>
+
+        <br>
+
+    </div>
+
+
+</body>
+<script>
+    function enviar(){
+    let nome = document.getElementById("nome").value;
+
+    if(nome == ""){
+        alert("Digite seu nome")
+        form3.nome.focus();
+        return false;
+    }
+
+}
+</script>
+
+</html>

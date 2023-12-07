@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../logocausa.png">
+    <title>Empresa</title>
+</head>
+<style>
+    body {
+        margin: 0;
+        background-image: linear-gradient(to left, #6e8ffb, rgb(206, 213, 218));
+        ;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .menu {
+        background-color: #4169e1;
+        padding: 12px;
+    }
+
+    .menu ul {
+        display: flex;
+    }
+
+    .menu ul li {
+        list-style-type: none;
+        padding-right: 18px;
+    }
+
+    .empresasimg {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    .empresasimg ul li{
+        display: flex;
+        text-align: center;
+        margin: 10px;
+        list-style-type: none;
+        padding: 18px;
+    }
+
+    .empresasimg img{
+        width: 100px;
+        height: 100px;
+        border-radius: 5px;
+    }
+
+    .empresasimg p{
+        padding-left: 10px;
+    }
+
+    a:link{
+        color: white;
+    }
+
+    a:hover{
+        font-weight: bold;
+    }
+
+    a:visited{
+        color: white;
+    }
+
+    @media (max-width: 970px) {
+        .menu ul {
+            flex-direction: column;
+            align-items: center;
+        }
+
+    }
+
+</style>
+
+<body>
+    <div class="container">
+        <div class="menu">
+            <ul>
+                <li><a href="../index.html">O PROJETO</a></li>
+                <li><a href="historia.html">NOSSA HISTÓRIA</a></li>
+                <li><a href="cadastro.html">SE CADASTRE</a></li>
+                <li><a href="voluntario.html">VOLUNTÁRIO</a></li>
+                <li><a href="relatos.html">RELATOS</a></li>
+                <li><a href="empresas.html">EMPRESAS PARCEIRAS</a></li>
+            </ul>
+        </div>
+
+        <center>
+            <h3>Segue as empresas parceiras do projeto <br>Que em troca de nenhum centavo nos auxiliam na nossa causa.</h3>
+        </center>
+
+        <div class="empresasimg">
+            <ul>
+                <li>
+                    <img src="logoempresas/itau.png">
+                    <p>Itaú - Desde o nosso início, o Itaú segue nos auxiliando em nossa causa, além de diversos investimentos, promovem eventos para a arrecadação para o projeto.</p>
+                </li>
+
+                <li>
+                    <img src="logoempresas/samsung.avif">
+                    <p>Samsung - A Samsung foi uma parceira que fizemos recentemente, e tem nos ajudados muito. Além dos investimentos, tivemos melhoria no setor tecnológico.</p>
+                    
+                </li>
+
+                <li>
+                    <img src="logoempresas/assaí.jfif">
+                    <p>Assaí - O Assaí é o parceiro responsável pelo maior número de doação de alimentos, sem eles seria quase impossível a causa acontecer. </p>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+
+</body>
+
+</html>

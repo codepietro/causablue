@@ -1,0 +1,13 @@
+texto/titulo - Causa Blue
+royal blue - #4169E1
+darkblue - #00008B
+deepskyblue - #00BFFF
+
+background padrao
+mediumspringgreen - #00FA9A
+mediumseagreen - #3CB371
+seagreen - #2E8B57
+springgreen - #00FF7F	
+
+menu
+saddlebrown - #8B4513	
